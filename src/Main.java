@@ -7,6 +7,13 @@ public class Main {
     static List <Integer> arabic = new ArrayList<>();
     static List <String> roman = new ArrayList<>();
 
+    public static void main(String[] args) throws IOException {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+
+        System.out.println(calc(input));
+    }
+
     public static String calc(String input) throws IOException {
         Collections.addAll(arabic, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 40, 50, 90, 100);
         Collections.addAll(roman, "I", "II", "III", "IV", "V", "VI", "VII",
